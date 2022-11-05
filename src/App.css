@@ -1,6 +1,7 @@
 :root{
   background-color: white;
   color: white;
+  font-family: cursive;
   --purple: #6b5b95;
   --pink: #d64161;
   --yellow: #feb236;
@@ -46,6 +47,51 @@
   background-color: black;
 
 }
+.btn btn-warning {
+  color: black;
+}
+
+.customers-heading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 50px;
+  border-style: dotted;
+  border-color: white;
+  border-width: 1px;
+}
+.customers-container {
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-style: solid;
+  border-width: 40px 20px 20px 40px;
+  border-radius: 15px 0 15px 15px;
+  border-color: var(--pink);
+  background-color: var(--pink);
+}
+.customer-list {
+  padding: 5px;
+  border-style: dotted;
+  border-color: white;
+  border-width: 1px
+}
+.customer-list li {
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.customer{
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
 .App {
   text-align: center;
 }

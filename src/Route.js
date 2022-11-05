@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import React from "react";
-import AppCustomers from './components/AppCustomers';
-import AppProducts from './components/AppProducts';
+import AppCustomers from './pages/AppCustomers';
+import AppProducts from './pages/AppProducts';
 
 export default function Router() {
   return (
