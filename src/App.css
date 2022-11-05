@@ -1,3 +1,51 @@
+:root{
+  background-color: white;
+  color: white;
+  --purple: #6b5b95;
+  --pink: #d64161;
+  --yellow: #feb236;
+  --orange: #ff7b25;
+
+}
+
+.nav{
+  background-color: var(--pink);
+  
+}
+
+.nav-title{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 3px 15px;
+  border-color: black;
+  font-style: italic;
+}
+.nav-list{
+  display: flex;
+  list-style-type: none;
+}
+.nav-item{
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+
+}
+.nav-item a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+}
+.nav-item a:hover{
+  padding: 10px;
+  color: white;
+  background-color: black;
+
+}
 .App {
   text-align: center;
 }
