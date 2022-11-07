@@ -24,6 +24,14 @@ class CustomerService {
         lastname: "Lazic",
       },
     ];
+
+    this.nextID = this.customers.length + 1;
+
+  }
+
+  getNewID() {
+    this.newID = this.customers.length + 1;
+    console.log(this.newID);
   }
   getAll() {
     return this.customers;
@@ -34,10 +42,21 @@ class CustomerService {
   }
 
   delete(id) {
-    const customerIndex = this.customers.findIndex((customer) => customer.id === Number(id));
-    console.log(customerIndex);
+    const customerIndex = this.customers.find((customer) => customer.id === Number(id));
+    if(customerIndex === -1) {
+      return false;
+    }
     this.customers.slice(customerIndex, 1);
     return true;
+  }
+
+  create(newCustomerData) {
+    newCustomerData.id = this.nextID;
+    this.customers = [...this.customers, newCustomerData];
+    this.nextID++;
+    console.log(this.nextID);
+
+    return newCustomerData;
   }
 }
 

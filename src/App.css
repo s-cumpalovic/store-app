@@ -22,6 +22,7 @@
   margin-left: 10px;
   padding: 3px 15px;
   border-color: black;
+  color: white;
   font-style: italic;
 }
 .nav-list{
@@ -51,6 +52,11 @@
   color: black;
 }
 
+.btn btn-add {
+  color: white;
+  background-color: black;
+}
+
 .customers-heading {
   display: flex;
   text-align: center;
@@ -63,10 +69,10 @@
 }
 .customers-container {
   margin-top: 50px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
   border-style: solid;
-  border-width: 40px 20px 20px 40px;
+  border-width: 80px 40px 40px 80px;
   border-radius: 15px 0 15px 15px;
   border-color: var(--pink);
   background-color: var(--pink);
@@ -91,6 +97,8 @@
   margin-bottom: 10px;
   width: 50%;
 }
+
+
 
 .App {
   text-align: center;
